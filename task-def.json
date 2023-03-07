@@ -1,0 +1,36 @@
+{
+    "taskDefinition": {
+        "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:717234997732:task-definition/sample-fargate:1",
+        "containerDefinitions": [
+            {
+                "name": "fargate-app",
+                "image": "httpd:2.4",
+                "mountPoints": [],
+                "volumesFrom": []
+            }
+        ],
+        "family": "sample-fargate",
+        "networkMode": "awsvpc",
+        "revision": 1,
+        "volumes": [],
+        "status": "ACTIVE",
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+            },
+            {
+                "name": "ecs.capability.task-eni"            }        ],
+        "placementConstraints": [],
+        "compatibilities": [
+            "EC2",
+            "FARGATE"
+        ],
+        "requiresCompatibilities": [
+            "FARGATE"
+        ],
+        "cpu": "256",
+        "memory": "512",
+        "registeredAt": "2023-03-07T09:03:11.373000+00:00",
+        "registeredBy": "arn:aws:iam::717234997732:root"
+    }
+}
